@@ -3,823 +3,696 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="theme-color" content="#8b1538">
-<meta name="description" content="Create a beautiful personalized Rakhi with Arogya. Care Beyond Rakhi. Arogya launches 14 September 2026.">
-<title>Arogya Rakhi ❤️ | Care Beyond Rakhi</title>
+
+<title>Arogya Rakhi ❤️ | Care Today. Better Tomorrow.</title>
+
+<meta name="description"
+content="Create a beautiful personalized Rakhi with Arogya. Celebrate the bond of care. Arogya launches 14 September 2026.">
 
 <style>
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+
+*{
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
 }
 
-:root {
-  --maroon: #8b1538;
-  --red: #d62939;
-  --gold: #d7a84b;
-  --cream: #fff9f1;
-  --pink: #fff0f4;
-  --dark: #24151a;
-  --muted: #75676b;
-  --white: #ffffff;
+html{
+    scroll-behavior:smooth;
 }
 
-html {
-  scroll-behavior: smooth;
-}
+body{
+    font-family:
+    Inter,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Arial,
+    sans-serif;
 
-body {
-  font-family: Arial, Helvetica, sans-serif;
-  background:
-    radial-gradient(circle at 10% 10%, rgba(255, 198, 210, .5), transparent 28%),
-    radial-gradient(circle at 90% 20%, rgba(255, 221, 157, .45), transparent 28%),
-    linear-gradient(145deg, #fff4f6, #fffaf2);
-  color: var(--dark);
-  min-height: 100vh;
-  overflow-x: hidden;
+    background:
+    radial-gradient(circle at top left,#eafff1 0,#ffffff 35%),
+    linear-gradient(180deg,#ffffff,#f4fff8);
+
+    color:#123b2d;
+    min-height:100vh;
 }
 
 button,
-input {
-  font: inherit;
+input{
+    font:inherit;
 }
 
-button {
-  cursor: pointer;
+button{
+    cursor:pointer;
 }
 
-.app {
-  width: 100%;
-  max-width: 560px;
-  margin: auto;
-  min-height: 100vh;
-}
-
-/* ---------------- TOP BRAND ---------------- */
+/* =========================
+   APP
+========================= */
 
-.topbar {
-  padding: 24px 20px 10px;
-  text-align: center;
+.app{
+    width:100%;
+    max-width:520px;
+    margin:auto;
+    min-height:100vh;
+    overflow:hidden;
 }
 
-.logo-image {
-  width: 118px;
-  max-height: 75px;
-  object-fit: contain;
-  display: block;
-  margin: 0 auto 8px;
-}
-
-.brand-fallback {
-  display: none;
-  font-size: 32px;
-  font-weight: 900;
-  color: var(--maroon);
-}
+/* =========================
+   HEADER
+========================= */
 
-.tagline {
-  color: var(--maroon);
-  font-weight: 700;
-  letter-spacing: .3px;
+.header{
+    padding:22px 20px 10px;
+    text-align:center;
 }
 
-/* ---------------- HERO ---------------- */
-
-.hero {
-  padding: 20px 20px 10px;
-  text-align: center;
+.logo-img{
+    width:145px;
+    max-width:55%;
+    height:auto;
+    display:block;
+    margin:0 auto 8px;
 }
 
-.launch-pill {
-  display: inline-block;
-  padding: 8px 14px;
-  border-radius: 999px;
-  background: rgba(139, 21, 56, .09);
-  color: var(--maroon);
-  font-size: 13px;
-  font-weight: 800;
-  margin-bottom: 18px;
+.tagline{
+    font-size:12px;
+    font-weight:700;
+    letter-spacing:2px;
+    color:#168447;
+    text-transform:uppercase;
 }
 
-.hero h1 {
-  font-size: clamp(34px, 9vw, 52px);
-  line-height: 1.02;
-  letter-spacing: -1.8px;
-  margin-bottom: 15px;
-}
+/* =========================
+   HERO
+========================= */
 
-.hero h1 span {
-  color: var(--red);
-}
+.hero{
+    margin:10px 16px 18px;
+    border-radius:30px;
+    padding:34px 22px;
+    text-align:center;
 
-.hero-copy {
-  color: var(--muted);
-  font-size: 16px;
-  line-height: 1.65;
-  max-width: 430px;
-  margin: auto;
-}
+    background:
+    linear-gradient(
+        145deg,
+        rgba(12,92,63,.97),
+        rgba(24,151,83,.92)
+    );
 
-/* ---------------- VISUAL SCENE ---------------- */
+    color:white;
 
-.scene {
-  margin: 25px 20px;
-  height: 235px;
-  border-radius: 32px;
-  position: relative;
-  overflow: hidden;
-  background:
-    linear-gradient(180deg, #fff0f4 0%, #ffe2e8 60%, #fff5df 100%);
-  box-shadow: 0 18px 50px rgba(110, 33, 56, .13);
-}
+    position:relative;
+    overflow:hidden;
 
-.sun {
-  width: 82px;
-  height: 82px;
-  border-radius: 50%;
-  background: #ffd77a;
-  position: absolute;
-  top: 22px;
-  right: 28px;
-  box-shadow: 0 0 40px rgba(255, 199, 84, .5);
+    box-shadow:
+    0 20px 50px rgba(15,103,66,.22);
 }
 
-.cloud {
-  position: absolute;
-  width: 95px;
-  height: 24px;
-  background: rgba(255,255,255,.7);
-  border-radius: 30px;
+.hero:before{
+    content:"";
+    position:absolute;
+    width:220px;
+    height:220px;
+    border-radius:50%;
+    background:rgba(255,255,255,.08);
+    top:-110px;
+    right:-80px;
 }
 
-.cloud:before,
-.cloud:after {
-  content: "";
-  position: absolute;
-  background: inherit;
-  border-radius: 50%;
+.hero:after{
+    content:"";
+    position:absolute;
+    width:170px;
+    height:170px;
+    border-radius:50%;
+    background:rgba(255,255,255,.06);
+    bottom:-90px;
+    left:-60px;
 }
 
-.cloud:before {
-  width: 42px;
-  height: 42px;
-  left: 18px;
-  bottom: 0;
+.hero-content{
+    position:relative;
+    z-index:2;
 }
 
-.cloud:after {
-  width: 32px;
-  height: 32px;
-  right: 14px;
-  bottom: 0;
+.heart{
+    font-size:35px;
+    animation:heartbeat 1.7s infinite;
 }
 
-.cloud.one {
-  top: 55px;
-  left: 25px;
-}
+@keyframes heartbeat{
+    0%,100%{
+        transform:scale(1);
+    }
 
-.cloud.two {
-  top: 100px;
-  right: 90px;
-  transform: scale(.7);
+    50%{
+        transform:scale(1.15);
+    }
 }
 
-.person {
-  position: absolute;
-  bottom: 15px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  animation: floatPerson 3s ease-in-out infinite;
+.hero h1{
+    font-size:34px;
+    line-height:1.12;
+    margin:10px 0;
 }
 
-.person .head {
-  width: 35px;
-  height: 35px;
-  border-radius: 50%;
-  background: #c77b55;
-  position: relative;
-  z-index: 2;
+.hero p{
+    font-size:15px;
+    line-height:1.6;
+    opacity:.94;
 }
 
-.person .body {
-  width: 57px;
-  height: 75px;
-  border-radius: 28px 28px 14px 14px;
-  margin-top: -3px;
-  position: relative;
-}
+.launch{
+    display:inline-block;
+    margin-top:20px;
+    padding:10px 15px;
+    border-radius:30px;
 
-.person .arm {
-  position: absolute;
-  width: 42px;
-  height: 13px;
-  border-radius: 20px;
-  top: 22px;
-}
+    background:rgba(255,255,255,.14);
+    border:1px solid rgba(255,255,255,.25);
 
-.person.runner {
-  left: 55px;
+    font-size:13px;
+    font-weight:700;
 }
 
-.person.runner .body {
-  background: #6d6de8;
-}
+/* =========================
+   HEALTH VISUAL
+========================= */
 
-.person.runner .arm {
-  background: #c77b55;
-  right: -25px;
-  transform: rotate(-25deg);
-}
+.health-strip{
+    margin:0 16px 20px;
+    padding:18px;
 
-.person.workout {
-  left: 210px;
-  animation-delay: .8s;
-}
+    background:white;
+    border-radius:22px;
 
-.person.workout .body {
-  background: #d94e65;
-}
+    box-shadow:
+    0 10px 30px rgba(0,0,0,.06);
 
-.person.workout .arm {
-  background: #c77b55;
-  left: -24px;
-  transform: rotate(25deg);
+    text-align:center;
 }
 
-.person.family {
-  right: 45px;
-  animation-delay: 1.4s;
+.health-icons{
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+    margin-bottom:12px;
 }
 
-.person.family .body {
-  background: #45a887;
+.health-icon{
+    font-size:28px;
+    animation:float 3s ease-in-out infinite;
 }
 
-.heart-float {
-  position: absolute;
-  font-size: 25px;
-  animation: heartFloat 3s ease-in-out infinite;
+.health-icon:nth-child(2){
+    animation-delay:.4s;
 }
 
-.heart-one {
-  left: 135px;
-  top: 65px;
+.health-icon:nth-child(3){
+    animation-delay:.8s;
 }
 
-.heart-two {
-  right: 145px;
-  top: 125px;
-  animation-delay: 1s;
+.health-icon:nth-child(4){
+    animation-delay:1.2s;
 }
 
-.running-line {
-  position: absolute;
-  left: 28px;
-  right: 28px;
-  bottom: 10px;
-  height: 3px;
-  border-radius: 10px;
-  background: rgba(139,21,56,.18);
-}
+@keyframes float{
+    0%,100%{
+        transform:translateY(0);
+    }
 
-@keyframes floatPerson {
-  0%,100% { transform: translateY(0); }
-  50% { transform: translateY(-7px); }
+    50%{
+        transform:translateY(-7px);
+    }
 }
 
-@keyframes heartFloat {
-  0%,100% { transform: translateY(0) scale(1); }
-  50% { transform: translateY(-9px) scale(1.08); }
+.health-strip strong{
+    display:block;
+    font-size:15px;
 }
 
-/* ---------------- CARDS ---------------- */
-
-.card {
-  margin: 18px 20px;
-  padding: 28px 20px;
-  background: rgba(255,255,255,.92);
-  border: 1px solid rgba(255,255,255,.8);
-  border-radius: 30px;
-  box-shadow: 0 16px 45px rgba(65, 22, 34, .09);
+.health-strip span{
+    display:block;
+    color:#789086;
+    font-size:12px;
+    margin-top:4px;
 }
 
-.card h2 {
-  font-size: 26px;
-  margin-bottom: 10px;
-}
+/* =========================
+   CARD
+========================= */
 
-.card-description {
-  color: var(--muted);
-  line-height: 1.55;
-  margin-bottom: 20px;
-}
+.card{
+    margin:0 16px 18px;
+    background:rgba(255,255,255,.97);
+    border-radius:26px;
+    padding:25px 20px;
 
-/* ---------------- FORM ---------------- */
+    box-shadow:
+    0 12px 35px rgba(15,60,40,.08);
 
-.name-input {
-  width: 100%;
-  border: 2px solid #eee3e5;
-  background: #fff;
-  border-radius: 16px;
-  padding: 16px;
-  font-size: 17px;
-  outline: none;
-  transition: .2s;
+    border:1px solid #edf5f0;
 }
 
-.name-input:focus {
-  border-color: var(--maroon);
-  box-shadow: 0 0 0 4px rgba(139,21,56,.08);
+.hidden{
+    display:none !important;
 }
 
-.primary-btn {
-  width: 100%;
-  border: 0;
-  border-radius: 16px;
-  padding: 16px 18px;
-  margin-top: 13px;
-  color: #fff;
-  font-weight: 800;
-  background: linear-gradient(135deg, #8b1538, #d62939);
-  box-shadow: 0 12px 25px rgba(139,21,56,.22);
-  transition: .2s;
+.card h2{
+    font-size:24px;
+    text-align:center;
+    color:#123b2d;
+    margin-bottom:9px;
 }
 
-.primary-btn:hover {
-  transform: translateY(-2px);
+.card-intro{
+    text-align:center;
+    color:#708078;
+    font-size:14px;
+    line-height:1.5;
+    margin-bottom:20px;
 }
 
-/* ---------------- CATEGORIES ---------------- */
+/* =========================
+   FORM
+========================= */
 
-.categories {
-  display: flex;
-  gap: 8px;
-  overflow-x: auto;
-  padding: 4px 2px 12px;
-  scrollbar-width: none;
+label{
+    display:block;
+    font-size:13px;
+    font-weight:700;
+    margin:15px 0 7px;
 }
 
-.categories::-webkit-scrollbar {
-  display: none;
-}
+input[type="text"]{
+    width:100%;
+    border:1.5px solid #dfece5;
+    background:#fbfefc;
+    border-radius:15px;
+    padding:15px;
 
-.category {
-  flex: 0 0 auto;
-  border: 1px solid #eee1e4;
-  background: #fff;
-  color: #654e55;
-  padding: 9px 13px;
-  border-radius: 999px;
-  font-size: 13px;
-  font-weight: 700;
+    outline:none;
+    color:#173b2e;
 }
 
-.category.active {
-  background: var(--maroon);
-  color: white;
-  border-color: var(--maroon);
+input[type="text"]:focus{
+    border-color:#19a45d;
+    box-shadow:0 0 0 4px rgba(25,164,93,.08);
 }
 
-/* ---------------- RAKHI GRID ---------------- */
+/* =========================
+   PHOTO UPLOAD
+========================= */
 
-.rakhis {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 12px;
+.photo-upload{
+    border:2px dashed #b9dcc8;
+    background:#f7fff9;
+    border-radius:18px;
+    padding:20px 12px;
+    text-align:center;
+    margin-top:10px;
 }
 
-.rakhi {
-  border: 2px solid #f0e5e7;
-  background: #fff;
-  border-radius: 22px;
-  padding: 14px;
-  text-align: center;
-  transition: .2s;
+.photo-icon{
+    font-size:35px;
+    margin-bottom:7px;
 }
 
-.rakhi:hover {
-  border-color: #d99aab;
-  transform: translateY(-3px);
+.photo-upload strong{
+    display:block;
+    font-size:14px;
 }
 
-.rakhi.selected {
-  border-color: var(--maroon);
-  box-shadow: 0 0 0 4px rgba(139,21,56,.08);
+.photo-upload small{
+    display:block;
+    color:#7a8b82;
+    margin-top:5px;
+    font-size:12px;
 }
 
-.rakhi-art {
-  height: 112px;
-  border-radius: 17px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  overflow: hidden;
-  margin-bottom: 10px;
+.photo-upload input{
+    display:none;
 }
 
-.rakhi-name {
-  font-weight: 800;
-  font-size: 14px;
+.upload-btn{
+    display:inline-block;
+    margin-top:12px;
+    padding:10px 17px;
+    border-radius:12px;
+    background:#e5f8ec;
+    color:#147445;
+    font-size:13px;
+    font-weight:700;
+    cursor:pointer;
 }
 
-.rakhi-sub {
-  color: #8d7c81;
-  font-size: 11px;
-  margin-top: 4px;
+.photo-preview{
+    width:90px;
+    height:90px;
+    border-radius:50%;
+    object-fit:cover;
+    margin:12px auto 0;
+    display:none;
+    border:4px solid white;
+    box-shadow:0 5px 18px rgba(0,0,0,.15);
 }
 
-/* Original Rakhi art */
+/* =========================
+   PRIMARY BUTTON
+========================= */
 
-.art-hero {
-  background: linear-gradient(135deg, #172554, #2563eb);
-}
+.primary{
+    width:100%;
+    border:0;
+    margin-top:18px;
+    padding:16px;
 
-.art-hero .gem {
-  width: 60px;
-  height: 60px;
-  background: linear-gradient(135deg,#ef4444,#f97316);
-  transform: rotate(45deg);
-  border: 5px solid #ffd76a;
-  box-shadow: 0 0 0 8px rgba(255,215,106,.25);
-}
+    border-radius:16px;
 
-.art-divine {
-  background: linear-gradient(135deg,#fff0c2,#ffe1a1);
-}
+    background:
+    linear-gradient(135deg,#0d8050,#19b967);
 
-.art-divine .symbol {
-  font-size: 55px;
-}
+    color:white;
 
-.art-flower {
-  background: linear-gradient(135deg,#ffe4ec,#fff);
-}
+    font-weight:800;
+    font-size:16px;
 
-.flower {
-  width: 70px;
-  height: 70px;
-  position: relative;
-}
+    box-shadow:
+    0 10px 22px rgba(19,153,86,.22);
 
-.flower span {
-  position: absolute;
-  width: 28px;
-  height: 45px;
-  border-radius: 50%;
-  background: #e95577;
-  left: 21px;
-  top: 12px;
-  transform-origin: 14px 23px;
+    transition:.2s;
 }
 
-.flower span:nth-child(1){transform:rotate(0deg)}
-.flower span:nth-child(2){transform:rotate(60deg)}
-.flower span:nth-child(3){transform:rotate(120deg)}
-.flower span:nth-child(4){transform:rotate(180deg)}
-.flower span:nth-child(5){transform:rotate(240deg)}
-.flower span:nth-child(6){transform:rotate(300deg)}
-
-.flower:after {
-  content:"";
-  position:absolute;
-  width:22px;
-  height:22px;
-  border-radius:50%;
-  background:#ffd45c;
-  left:24px;
-  top:24px;
+.primary:hover{
+    transform:translateY(-2px);
 }
 
-.art-royal {
-  background: linear-gradient(135deg,#33210d,#a87521);
+.primary:active{
+    transform:scale(.98);
 }
 
-.art-royal .gem {
-  width: 65px;
-  height: 65px;
-  border-radius: 50%;
-  background: radial-gradient(circle at 35% 30%,#fff3a8,#e6b94f 45%,#8a5413);
-  border: 7px solid #f6d77c;
-  box-shadow: 0 0 0 8px rgba(255,214,107,.2);
-}
+/* =========================
+   RAKHI GRID
+========================= */
 
-.art-modern {
-  background: linear-gradient(135deg,#d9f7ef,#eafcff);
+.rakhi-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:13px;
+    margin-top:20px;
 }
 
-.art-modern .circle {
-  width: 68px;
-  height: 68px;
-  border-radius: 50%;
-  border: 7px solid #2c9f87;
-  position: relative;
+.rakhi-option{
+    border:1.5px solid #e3eee8;
+    border-radius:18px;
+    overflow:hidden;
+    background:white;
+    transition:.2s;
 }
 
-.art-modern .circle:after {
-  content:"♥";
-  position:absolute;
-  font-size:30px;
-  color:#d64c68;
-  inset:0;
-  display:flex;
-  align-items:center;
-  justify-content:center;
+.rakhi-option:hover{
+    transform:translateY(-3px);
+    border-color:#20a962;
+    box-shadow:0 8px 20px rgba(20,130,72,.12);
 }
 
-.art-kids {
-  background: linear-gradient(135deg,#e5dcff,#fff0f6);
+.rakhi-option.selected{
+    border:2px solid #18a55b;
+    box-shadow:0 0 0 4px rgba(24,165,91,.1);
 }
 
-.art-kids .star {
-  font-size: 58px;
+.rakhi-image{
+    width:100%;
+    height:130px;
+    object-fit:cover;
+    display:block;
 }
+
+.rakhi-emoji{
+    height:130px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:65px;
 
-.art-love {
-  background: linear-gradient(135deg,#ffe1e7,#fff);
+    background:
+    linear-gradient(135deg,#fff4f7,#fffaf0);
 }
 
-.art-love .heart {
-  font-size: 64px;
-  filter: drop-shadow(0 8px 8px rgba(180,40,65,.18));
+.rakhi-name{
+    padding:11px 7px;
+    text-align:center;
+    font-weight:800;
+    font-size:13px;
+    color:#24483a;
 }
 
-/* ---------------- PHOTO ---------------- */
+/* =========================
+   LOADING
+========================= */
 
-.photo-area {
-  border: 2px dashed #decbd0;
-  border-radius: 20px;
-  padding: 20px;
-  text-align: center;
-  background: #fffafa;
-  margin-top: 16px;
+.loading{
+    text-align:center;
+    padding:30px 10px;
 }
 
-.photo-preview {
-  width: 100%;
-  max-height: 300px;
-  object-fit: cover;
-  border-radius: 18px;
-  display: none;
-  margin-top: 15px;
+.spinner{
+    width:55px;
+    height:55px;
+    border:5px solid #e4f3e9;
+    border-top-color:#18a55b;
+    border-radius:50%;
+    margin:0 auto 20px;
+    animation:spin 1s linear infinite;
 }
 
-.photo-buttons {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 10px;
+@keyframes spin{
+    to{
+        transform:rotate(360deg);
+    }
 }
 
-.photo-btn {
-  border: 0;
-  border-radius: 14px;
-  padding: 13px;
-  background: #f6e8eb;
-  color: var(--maroon);
-  font-weight: 800;
+.loading h3{
+    font-size:19px;
 }
 
-#photoInput {
-  display: none;
+.loading p{
+    color:#789086;
+    margin-top:7px;
+    font-size:13px;
 }
 
-/* ---------------- RESULT ---------------- */
+/* =========================
+   FINAL RAKHI
+========================= */
 
-.result {
-  text-align: center;
-}
+.final-card{
+    background:
+    linear-gradient(145deg,#ffffff,#f2fff7);
 
-.result-card {
-  background:
-    radial-gradient(circle at top,#fff3c8,transparent 35%),
-    linear-gradient(145deg,#fff,#fff5f7);
-  border: 1px solid #f0dfe3;
-  border-radius: 26px;
-  padding: 25px 18px;
+    border:1px solid #dcefe3;
 }
 
-.result-logo {
-  width: 90px;
-  max-height: 55px;
-  object-fit: contain;
-  margin-bottom: 8px;
+.final-title{
+    text-align:center;
+    color:#168447;
+    font-size:13px;
+    letter-spacing:1.5px;
+    text-transform:uppercase;
+    font-weight:800;
 }
 
-.final-name {
-  font-size: 32px;
-  color: var(--maroon);
-  margin: 8px 0 5px;
+.final-card h2{
+    font-size:28px;
+    margin:8px 0 4px;
 }
 
-.final-rakhi {
-  width: 220px;
-  height: 105px;
-  margin: 22px auto;
-  border-radius: 60px;
-  background: linear-gradient(90deg,#d6a07b,#e7b78e,#d6a07b);
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  box-shadow: inset 0 -10px 18px rgba(90,45,30,.12);
-}
+.final-photo{
+    width:125px;
+    height:125px;
+    object-fit:cover;
+    border-radius:50%;
+    display:block;
+    margin:18px auto 12px;
 
-.final-band {
-  width: 105px;
-  height: 48px;
-  border-radius: 13px;
-  background: linear-gradient(135deg,#8b1538,#d62939);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 29px;
-  box-shadow: 0 7px 15px rgba(0,0,0,.18);
-  position: relative;
-}
+    border:6px solid white;
 
-.final-band:before,
-.final-band:after {
-  content:"";
-  position:absolute;
-  width:52px;
-  height:8px;
-  background:#d62939;
-  top:20px;
+    box-shadow:
+    0 8px 25px rgba(0,0,0,.16);
 }
 
-.final-band:before {
-  right:92px;
-}
+.final-rakhi{
+    width:190px;
+    height:110px;
+    margin:14px auto;
 
-.final-band:after {
-  left:92px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    position:relative;
 }
 
-.final-photo {
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-  object-fit: cover;
-  border: 7px solid #fff;
-  box-shadow: 0 12px 30px rgba(80,20,35,.16);
-  display: none;
-  margin: 0 auto 18px;
+.final-rakhi:before,
+.final-rakhi:after{
+    content:"";
+    position:absolute;
+    width:70px;
+    height:12px;
+    background:#d59a58;
+    top:49px;
+    border-radius:10px;
 }
 
-.share-btn {
-  width: 100%;
-  border: 0;
-  border-radius: 16px;
-  padding: 16px;
-  background: #25d366;
-  color: white;
-  font-weight: 900;
-  margin-top: 14px;
+.final-rakhi:before{
+    left:0;
 }
 
-.secondary-btn {
-  width: 100%;
-  border: 1px solid #ead9dd;
-  border-radius: 16px;
-  padding: 14px;
-  background: white;
-  color: var(--maroon);
-  font-weight: 800;
-  margin-top: 10px;
+.final-rakhi:after{
+    right:0;
 }
 
-/* ---------------- VISION ---------------- */
+.rakhi-center{
+    position:relative;
+    z-index:2;
+    width:72px;
+    height:72px;
+    border-radius:50%;
 
-.vision {
-  padding: 25px 20px;
-}
+    background:
+    radial-gradient(circle,#ffe9a6 0 15%,#ef9d32 16% 35%,#d73c4c 36% 58%,#8d2440 59%);
 
-.vision-box {
-  border-radius: 30px;
-  padding: 28px 22px;
-  color: white;
-  background:
-    radial-gradient(circle at 90% 10%,rgba(255,255,255,.2),transparent 30%),
-    linear-gradient(145deg,#64132e,#a51f43);
-  box-shadow: 0 18px 45px rgba(100,19,46,.2);
-}
+    display:flex;
+    align-items:center;
+    justify-content:center;
 
-.vision-box h2 {
-  font-size: 30px;
-  margin-bottom: 12px;
+    font-size:32px;
+
+    box-shadow:
+    0 5px 15px rgba(0,0,0,.2);
 }
 
-.vision-box p {
-  color: rgba(255,255,255,.85);
-  line-height: 1.65;
+.final-message{
+    text-align:center;
+    font-size:15px;
+    line-height:1.65;
+    color:#52685e;
+    margin:12px 10px 18px;
 }
 
-.health-icons {
-  display: grid;
-  grid-template-columns: repeat(4,1fr);
-  gap: 8px;
-  margin-top: 20px;
+.brand-sign{
+    text-align:center;
+    margin:15px 0;
 }
 
-.health-icon {
-  background: rgba(255,255,255,.11);
-  border: 1px solid rgba(255,255,255,.13);
-  border-radius: 16px;
-  padding: 13px 5px;
-  text-align: center;
-  font-size: 24px;
+.brand-sign strong{
+    display:block;
+    color:#11804d;
+    font-size:19px;
 }
 
-.health-icon span {
-  display: block;
-  font-size: 10px;
-  margin-top: 7px;
-  color: rgba(255,255,255,.85);
+.brand-sign span{
+    font-size:11px;
+    letter-spacing:1.5px;
+    color:#668175;
+    text-transform:uppercase;
 }
 
-/* ---------------- LAUNCH ---------------- */
+/* =========================
+   SHARE BUTTON
+========================= */
 
-.launch {
-  margin: 10px 20px 25px;
-  padding: 28px 22px;
-  text-align: center;
-  background: #fff;
-  border-radius: 30px;
-  box-shadow: 0 16px 40px rgba(65,22,34,.08);
-}
+.share{
+    width:100%;
+    border:0;
+    padding:15px;
+    border-radius:15px;
 
-.launch-date {
-  font-size: 34px;
-  font-weight: 900;
-  color: var(--maroon);
-  margin: 10px 0;
-}
+    background:#25d366;
+    color:white;
 
-.launch p {
-  color: var(--muted);
-  line-height: 1.6;
+    font-weight:800;
+    font-size:15px;
 }
 
-/* ---------------- FOOTER ---------------- */
+.save{
+    width:100%;
+    border:1px solid #d5e8dc;
+    padding:14px;
+    border-radius:15px;
 
-footer {
-  text-align: center;
-  padding: 20px 20px 40px;
-  color: #8b7a7f;
-  font-size: 13px;
-  line-height: 1.6;
+    background:white;
+    color:#18794a;
+
+    font-weight:800;
+    margin-top:10px;
 }
+
+/* =========================
+   FOOTER
+========================= */
 
-.footer-brand {
-  color: var(--maroon);
-  font-weight: 900;
+.footer{
+    text-align:center;
+    padding:10px 20px 30px;
 }
 
-/* ---------------- STATES ---------------- */
+.footer strong{
+    color:#14824d;
+}
 
-.hidden {
-  display: none !important;
+.footer p{
+    color:#829088;
+    font-size:11px;
+    margin-top:6px;
+    line-height:1.5;
 }
 
-.fade-in {
-  animation: fadeIn .7s ease forwards;
+/* =========================
+   CONFETTI
+========================= */
+
+.confetti{
+    position:fixed;
+    top:-20px;
+    width:9px;
+    height:14px;
+    pointer-events:none;
+    z-index:1000;
+    animation:confettiFall 3s linear forwards;
 }
 
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(15px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+@keyframes confettiFall{
+    to{
+        transform:
+        translateY(110vh)
+        rotate(720deg);
+        opacity:0;
+    }
 }
 
-@media (max-width: 380px) {
-  .rakhis {
-    grid-template-columns: 1fr 1fr;
-  }
+/* =========================
+   RESPONSIVE
+========================= */
 
-  .scene {
-    height: 210px;
-  }
+@media(max-width:380px){
 
-  .person.runner {
-    left: 30px;
-  }
+    .hero h1{
+        font-size:29px;
+    }
 
-  .person.workout {
-    left: 150px;
-  }
+    .rakhi-image,
+    .rakhi-emoji{
+        height:110px;
+    }
 
-  .person.family {
-    right: 20px;
-  }
+    .card{
+        padding:21px 16px;
+    }
 }
+
 </style>
 </head>
 
@@ -827,654 +700,698 @@ footer {
 
 <div class="app">
 
-  <!-- BRAND -->
-  <header class="topbar">
+<!-- HEADER -->
+
+<header class="header">
+
     <img
-      src="arogya-logo.png"
-      alt="Arogya"
-      class="logo-image"
-      onerror="this.style.display='none'; document.querySelector('.brand-fallback').style.display='block';"
-    >
-
-    <div class="brand-fallback">Arogya</div>
-
-    <div class="tagline">
-      Care Beyond Rakhi ❤️
-    </div>
-  </header>
-
-  <!-- HERO -->
-  <section class="hero">
-    <div class="launch-pill">
-      🚀 Arogya App • Launching 14 September 2026
-    </div>
-
-    <h1>
-      Celebrate the bond of<br>
-      <span>care.</span>
-    </h1>
-
-    <p class="hero-copy">
-      This Raksha Bandhan, create something personal for the brother
-      you care about — and discover a new journey toward better health.
-    </p>
-  </section>
-
-  <!-- VISUAL -->
-  <section class="scene" aria-label="Arogya health and Raksha Bandhan visual">
-
-    <div class="sun"></div>
-
-    <div class="cloud one"></div>
-    <div class="cloud two"></div>
-
-    <div class="heart-float heart-one">❤️</div>
-    <div class="heart-float heart-two">✨</div>
-
-    <div class="person runner">
-      <div class="head"></div>
-      <div class="body">
-        <div class="arm"></div>
-      </div>
-    </div>
-
-    <div class="person workout">
-      <div class="head"></div>
-      <div class="body">
-        <div class="arm"></div>
-      </div>
-    </div>
-
-    <div class="person family">
-      <div class="head"></div>
-      <div class="body">
-        <div class="arm"></div>
-      </div>
-    </div>
-
-    <div class="running-line"></div>
-  </section>
-
-  <!-- STEP 1 -->
-  <section id="step1" class="card fade-in">
-
-    <h2>🎁 Create a Special Rakhi</h2>
-
-    <p class="card-description">
-      Personalize a Rakhi for your brother and make this year's
-      Raksha Bandhan unforgettable.
-    </p>
-
-    <input
-      id="brotherName"
-      class="name-input"
-      type="text"
-      maxlength="30"
-      placeholder="Enter your brother's name"
-      autocomplete="name"
-    >
-
-    <button class="primary-btn" onclick="startCreation()">
-      Create His Rakhi ❤️
-    </button>
-
-  </section>
-
-  <!-- STEP 2 -->
-  <section id="step2" class="card hidden">
-
-    <h2>✨ Choose His Style</h2>
-
-    <p class="card-description">
-      Pick a Rakhi that matches his personality.
-    </p>
-
-    <div class="categories">
-
-      <button class="category active" onclick="filterRakhis('all', this)">
-        All
-      </button>
-
-      <button class="category" onclick="filterRakhis('hero', this)">
-        🦸 Hero
-      </button>
-
-      <button class="category" onclick="filterRakhis('divine', this)">
-        🕉️ Divine
-      </button>
-
-      <button class="category" onclick="filterRakhis('flower', this)">
-        🌸 Floral
-      </button>
-
-      <button class="category" onclick="filterRakhis('royal', this)">
-        👑 Royal
-      </button>
-
-      <button class="category" onclick="filterRakhis('modern', this)">
-        ✨ Modern
-      </button>
-
-      <button class="category" onclick="filterRakhis('fun', this)">
-        🎨 Fun
-      </button>
-
-    </div>
-
-    <div class="rakhis">
-
-      <div class="rakhi" data-category="hero" onclick="selectRakhi('⚡','Hero Power',this)">
-        <div class="rakhi-art art-hero">
-          <div class="gem"></div>
-        </div>
-        <div class="rakhi-name">Hero Power</div>
-        <div class="rakhi-sub">Bold & energetic</div>
-      </div>
-
-      <div class="rakhi" data-category="divine" onclick="selectRakhi('🐘','Divine Ganesha',this)">
-        <div class="rakhi-art art-divine">
-          <div class="symbol">🐘</div>
-        </div>
-        <div class="rakhi-name">Divine Ganesha</div>
-        <div class="rakhi-sub">Blessings & love</div>
-      </div>
-
-      <div class="rakhi" data-category="flower" onclick="selectRakhi('🌸','Rose Garden',this)">
-        <div class="rakhi-art art-flower">
-          <div class="flower">
-            <span></span><span></span><span></span>
-            <span></span><span></span><span></span>
-          </div>
-        </div>
-        <div class="rakhi-name">Rose Garden</div>
-        <div class="rakhi-sub">Beautiful & gentle</div>
-      </div>
-
-      <div class="rakhi" data-category="royal" onclick="selectRakhi('👑','Royal Gold',this)">
-        <div class="rakhi-art art-royal">
-          <div class="gem"></div>
-        </div>
-        <div class="rakhi-name">Royal Gold</div>
-        <div class="rakhi-sub">Premium bond</div>
-      </div>
-
-      <div class="rakhi" data-category="modern" onclick="selectRakhi('❤️','Modern Heart',this)">
-        <div class="rakhi-art art-modern">
-          <div class="circle"></div>
-        </div>
-        <div class="rakhi-name">Modern Heart</div>
-        <div class="rakhi-sub">Simple & stylish</div>
-      </div>
-
-      <div class="rakhi" data-category="fun" onclick="selectRakhi('⭐','Happy Star',this)">
-        <div class="rakhi-art art-kids">
-          <div class="star">⭐</div>
-        </div>
-        <div class="rakhi-name">Happy Star</div>
-        <div class="rakhi-sub">Fun & playful</div>
-      </div>
-
-      <div class="rakhi" data-category="flower" onclick="selectRakhi('🌺','Bloom Love',this)">
-        <div class="rakhi-art art-flower">
-          <div class="flower">
-            <span></span><span></span><span></span>
-            <span></span><span></span><span></span>
-          </div>
-        </div>
-        <div class="rakhi-name">Bloom Love</div>
-        <div class="rakhi-sub">Made with warmth</div>
-      </div>
-
-      <div class="rakhi" data-category="fun" onclick="selectRakhi('🎨','Color Pop',this)">
-        <div class="rakhi-art art-kids">
-          <div class="star">🎨</div>
-        </div>
-        <div class="rakhi-name">Color Pop</div>
-        <div class="rakhi-sub">Bright & joyful</div>
-      </div>
-
-    </div>
-
-    <div class="photo-area">
-
-      <strong>📸 Add a Photo</strong>
-
-      <p class="card-description" style="margin:8px 0 15px;font-size:13px;">
-        Take a photo or choose one from your phone.
-        We'll use it in your personalized Rakhi experience.
-      </p>
-
-      <div class="photo-buttons">
-
-        <button class="photo-btn" onclick="openCamera()">
-          📷 Take Photo
-        </button>
-
-        <button class="photo-btn" onclick="document.getElementById('photoInput').click()">
-          🖼️ Upload Photo
-        </button>
-
-      </div>
-
-      <input
-        id="photoInput"
-        type="file"
-        accept="image/*"
-        capture="user"
-        onchange="handlePhoto(event)"
-      >
-
-      <img
-        id="photoPreview"
-        class="photo-preview"
-        alt="Your uploaded photo"
-      >
-
-    </div>
-
-  </section>
-
-  <!-- STEP 3 -->
-  <section id="step3" class="card hidden" style="text-align:center;">
-
-    <div style="font-size:42px;animation:heartFloat 1.2s infinite;">
-      ❤️
-    </div>
-
-    <h2 style="margin-top:12px;">
-      Creating Your Rakhi...
-    </h2>
-
-    <p class="card-description" id="loadingText">
-      Preparing something special...
-    </p>
-
-  </section>
-
-  <!-- STEP 4 -->
-  <section id="step4" class="card hidden result fade-in">
-
-    <div class="result-card">
-
-      <img
         src="arogya-logo.png"
         alt="Arogya"
-        class="result-logo"
-      >
+        class="logo-img"
+    >
 
-      <div style="font-size:14px;color:#8a747a;">
-        A special Rakhi for
-      </div>
+    <div class="tagline">
+        Care Today. Better Tomorrow.
+    </div>
 
-      <div id="finalName" class="final-name">
-        Brother ❤️
-      </div>
+</header>
 
-      <img
-        id="finalPhoto"
-        class="final-photo"
-        alt="Personalized Rakhi photo"
-      >
 
-      <div class="final-rakhi">
-        <div class="final-band" id="bandEmoji">
-          ❤️
+<!-- HERO -->
+
+<section class="hero">
+
+    <div class="hero-content">
+
+        <div class="heart">❤️</div>
+
+        <h1>
+            Celebrate the<br>
+            Bond of Care
+        </h1>
+
+        <p>
+            This Raksha Bandhan, create something
+            beautiful for the person who means the most.
+        </p>
+
+        <div class="launch">
+            🌿 Arogya App Launching • 14 September 2026
         </div>
-      </div>
-
-      <h3 style="font-size:21px;margin-bottom:12px;">
-        Happy Raksha Bandhan ❤️
-      </h3>
-
-      <p style="color:#75676b;line-height:1.65;">
-        This Rakhi isn't just a thread.
-        <br>
-        It's a promise to care, support and always be there.
-      </p>
-
-      <div style="margin-top:22px;color:#8b1538;font-weight:900;">
-        Arogya
-      </div>
-
-      <div style="font-size:13px;color:#8a747a;margin-top:4px;">
-        Care Beyond Rakhi
-      </div>
-
-      <button class="share-btn" onclick="shareRakhi()">
-        📲 Share With Your Brother
-      </button>
-
-      <button class="secondary-btn" onclick="restart()">
-        ✨ Create Another Rakhi
-      </button>
 
     </div>
 
-  </section>
+</section>
 
-  <!-- VISION -->
-  <section class="vision">
 
-    <div class="vision-box">
+<!-- HEALTH VISUAL -->
 
-      <h2>Care doesn't end with Rakhi.</h2>
+<section class="health-strip">
 
-      <p>
-        Arogya is building a new way to care for your health —
-        from movement and workouts to food, progress and everyday
-        wellness.
-      </p>
+    <div class="health-icons">
 
-      <div class="health-icons">
-
-        <div class="health-icon">
-          🏃
-          <span>Move</span>
-        </div>
-
-        <div class="health-icon">
-          🏋️
-          <span>Workout</span>
-        </div>
-
-        <div class="health-icon">
-          🥗
-          <span>Eat Better</span>
-        </div>
-
-        <div class="health-icon">
-          ❤️
-          <span>Care</span>
-        </div>
-
-      </div>
+        <div class="health-icon">🏃</div>
+        <div class="health-icon">💚</div>
+        <div class="health-icon">🧘</div>
+        <div class="health-icon">😊</div>
 
     </div>
 
-  </section>
+    <strong>
+        A healthier life starts with caring.
+    </strong>
 
-  <!-- LAUNCH -->
-  <section class="launch">
+    <span>
+        Your future. Your health. Your Arogya.
+    </span>
 
-    <div style="font-size:13px;font-weight:800;color:#8b1538;">
-      SOMETHING BIG IS COMING
-    </div>
+</section>
 
-    <div class="launch-date">
-      14 September 2026
-    </div>
 
-    <p>
-      The Arogya app launches soon.
-      <br>
-      Your health. Your transformation. Your journey.
+<!-- STEP 1 -->
+
+<section id="step1" class="card">
+
+    <h2>
+        🎁 Create His Rakhi
+    </h2>
+
+    <p class="card-intro">
+        Personalize a beautiful Rakhi message
+        for your brother in just a few seconds.
     </p>
 
-    <button
-      class="primary-btn"
-      onclick="followArogya()"
+
+    <label for="brotherName">
+        Brother's Name
+    </label>
+
+    <input
+        id="brotherName"
+        type="text"
+        maxlength="30"
+        placeholder="Enter his name ❤️"
     >
-      ❤️ Follow Arogya
-    </button>
 
-  </section>
 
-  <footer>
+    <label>
+        Add His Photo
+    </label>
 
-    <div class="footer-brand">
-      Arogya
+    <div class="photo-upload">
+
+        <div class="photo-icon">
+            📸
+        </div>
+
+        <strong>
+            Make your Rakhi personal
+        </strong>
+
+        <small>
+            Take a photo or choose one from your phone
+        </small>
+
+        <label class="upload-btn">
+
+            📷 Choose Photo
+
+            <input
+                id="photoInput"
+                type="file"
+                accept="image/*"
+            >
+
+        </label>
+
+        <img
+            id="photoPreview"
+            class="photo-preview"
+            alt="Photo preview"
+        >
+
     </div>
 
-    Care Beyond Rakhi ❤️
 
-    <br><br>
+    <button
+        class="primary"
+        onclick="continueToRakhi()"
+    >
+        Continue ❤️
+    </button>
 
-    A Raksha Bandhan experience by Arogya.
-    <br>
-    Arogya App launching 14 September 2026.
+</section>
 
-  </footer>
+
+<!-- STEP 2 -->
+
+<section id="step2" class="card hidden">
+
+    <h2>
+        🎀 Choose His Rakhi
+    </h2>
+
+    <p class="card-intro">
+        Pick the style that matches his personality.
+    </p>
+
+
+    <div class="rakhi-grid">
+
+
+        <!-- SPIDERMAN -->
+
+        <div
+            class="rakhi-option"
+            onclick="selectRakhi('🕷️','Spider Hero')"
+        >
+
+            <img
+                src="rakhi-spiderman.jpg"
+                class="rakhi-image"
+                alt="Spider Hero Rakhi"
+            >
+
+            <div class="rakhi-name">
+                🕷️ Spider Hero
+            </div>
+
+        </div>
+
+
+        <!-- AVENGERS -->
+
+        <div
+            class="rakhi-option"
+            onclick="selectRakhi('🦸','Avengers')"
+        >
+
+            <img
+                src="rakhi-avengers.jpg"
+                class="rakhi-image"
+                alt="Avengers Rakhi"
+            >
+
+            <div class="rakhi-name">
+                🦸 Avengers
+            </div>
+
+        </div>
+
+
+        <!-- GANESHA -->
+
+        <div
+            class="rakhi-option"
+            onclick="selectRakhi('🐘','Ganesha')"
+        >
+
+            <img
+                src="rakhi-ganesha.png"
+                class="rakhi-image"
+                alt="Ganesha Rakhi"
+            >
+
+            <div class="rakhi-name">
+                🐘 Ganesha
+            </div>
+
+        </div>
+
+
+        <!-- FLOWER -->
+
+        <div
+            class="rakhi-option"
+            onclick="selectRakhi('🌸','Flower')"
+        >
+
+            <div class="rakhi-emoji">
+                🌸
+            </div>
+
+            <div class="rakhi-name">
+                🌸 Flower
+            </div>
+
+        </div>
+
+
+        <!-- TRADITIONAL -->
+
+        <div
+            class="rakhi-option"
+            onclick="selectRakhi('🪷','Traditional')"
+        >
+
+            <div class="rakhi-emoji">
+                🪷
+            </div>
+
+            <div class="rakhi-name">
+                🪷 Traditional
+            </div>
+
+        </div>
+
+
+        <!-- ROYAL -->
+
+        <div
+            class="rakhi-option"
+            onclick="selectRakhi('👑','Royal')"
+        >
+
+            <div class="rakhi-emoji">
+                👑
+            </div>
+
+            <div class="rakhi-name">
+                👑 Royal
+            </div>
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+<!-- STEP 3 -->
+
+<section id="step3" class="card hidden">
+
+    <div class="loading">
+
+        <div class="spinner"></div>
+
+        <h3>
+            Creating something special...
+        </h3>
+
+        <p id="loadingText">
+            Preparing your personalized Rakhi ❤️
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- STEP 4 -->
+
+<section id="step4" class="card final-card hidden">
+
+    <div class="final-title">
+        A Special Rakhi From Arogya
+    </div>
+
+    <h2 id="finalName">
+        Brother ❤️
+    </h2>
+
+
+    <img
+        id="finalPhoto"
+        class="final-photo"
+        alt="Brother"
+    >
+
+
+    <div class="final-rakhi">
+
+        <div class="rakhi-center">
+            <span id="bandEmoji">❤️</span>
+        </div>
+
+    </div>
+
+
+    <div class="final-message">
+
+        This Rakhi isn't just a thread.
+
+        <br>
+
+        It's a promise to care,
+        protect and always stand beside you. ❤️
+
+    </div>
+
+
+    <div class="brand-sign">
+
+        <strong>
+            Arogya
+        </strong>
+
+        <span>
+            Care Today. Better Tomorrow.
+        </span>
+
+    </div>
+
+
+    <button
+        class="share"
+        onclick="shareRakhi()"
+    >
+        📲 Share With Your Brother
+    </button>
+
+
+    <button
+        class="save"
+        onclick="saveRakhi()"
+    >
+        📸 Save Rakhi
+    </button>
+
+</section>
+
+
+<!-- FOOTER -->
+
+<footer class="footer">
+
+    <strong>
+        Arogya
+    </strong>
+
+    <p>
+        Your health. Your family. Your future.
+        <br>
+        Arogya App launching 14 September 2026.
+    </p>
+
+</footer>
 
 </div>
+
 
 <script>
 
 let brother = "";
 let selectedRakhi = "❤️";
-let selectedRakhiName = "Modern Heart";
-let photoData = "";
+let selectedRakhiName = "Special";
+let brotherPhoto = "";
 
-/* ---------------- START ---------------- */
 
-function startCreation() {
+/* =========================
+   PHOTO UPLOAD
+========================= */
 
-  const input = document.getElementById("brotherName");
+document
+.getElementById("photoInput")
+.addEventListener("change", function(event){
 
-  brother = input.value.trim();
+    const file = event.target.files[0];
 
-  if (!brother) {
-    alert("Please enter your brother's name ❤️");
-    input.focus();
-    return;
-  }
-
-  document.getElementById("step1").classList.add("hidden");
-
-  document.getElementById("step2").classList.remove("hidden");
-
-  document.getElementById("step2").scrollIntoView({
-    behavior: "smooth",
-    block: "start"
-  });
-}
-
-/* ---------------- FILTER ---------------- */
-
-function filterRakhis(category, button) {
-
-  document.querySelectorAll(".category").forEach(function(btn) {
-    btn.classList.remove("active");
-  });
-
-  button.classList.add("active");
-
-  document.querySelectorAll(".rakhi").forEach(function(card) {
-
-    if (
-      category === "all" ||
-      card.dataset.category === category
-    ) {
-      card.style.display = "block";
-    } else {
-      card.style.display = "none";
+    if(!file){
+        return;
     }
 
-  });
-}
+    const reader = new FileReader();
 
-/* ---------------- RAKHI SELECTION ---------------- */
+    reader.onload = function(e){
 
-function selectRakhi(emoji, name, element) {
+        brotherPhoto = e.target.result;
 
-  selectedRakhi = emoji;
-  selectedRakhiName = name;
+        const preview =
+        document.getElementById("photoPreview");
 
-  document.querySelectorAll(".rakhi").forEach(function(card) {
-    card.classList.remove("selected");
-  });
+        preview.src = brotherPhoto;
+        preview.style.display = "block";
 
-  element.classList.add("selected");
+    };
 
-  document.getElementById("step2").classList.add("hidden");
+    reader.readAsDataURL(file);
 
-  document.getElementById("step3").classList.remove("hidden");
+});
 
-  document.getElementById("loadingText").innerText =
-    "Preparing " + name + " for " + brother + " ❤️";
 
-  setTimeout(function() {
+/* =========================
+   STEP 1
+========================= */
 
-    document.getElementById("step3").classList.add("hidden");
+function continueToRakhi(){
 
-    document.getElementById("finalName").innerText =
-      brother + " ❤️";
+    const input =
+    document.getElementById("brotherName");
 
-    document.getElementById("bandEmoji").innerText =
-      selectedRakhi;
+    brother =
+    input.value.trim();
 
-    if (photoData) {
 
-      const finalPhoto =
-        document.getElementById("finalPhoto");
+    if(!brother){
 
-      finalPhoto.src = photoData;
-      finalPhoto.style.display = "block";
+        alert(
+            "Please enter your brother's name ❤️"
+        );
 
+        input.focus();
+
+        return;
     }
 
-    document.getElementById("step4").classList.remove("hidden");
 
-    document.getElementById("step4").scrollIntoView({
-      behavior: "smooth",
-      block: "start"
+    document
+    .getElementById("step1")
+    .classList
+    .add("hidden");
+
+
+    document
+    .getElementById("step2")
+    .classList
+    .remove("hidden");
+
+
+    window.scrollTo({
+        top:0,
+        behavior:"smooth"
     });
 
-  }, 1600);
 }
 
-/* ---------------- PHOTO ---------------- */
 
-function handlePhoto(event) {
+/* =========================
+   SELECT RAKHI
+========================= */
 
-  const file = event.target.files[0];
+function selectRakhi(emoji,name){
 
-  if (!file) {
-    return;
-  }
+    selectedRakhi = emoji;
+    selectedRakhiName = name;
 
-  if (!file.type.startsWith("image/")) {
-    alert("Please choose an image file.");
-    return;
-  }
 
-  const reader = new FileReader();
+    document
+    .getElementById("step2")
+    .classList
+    .add("hidden");
 
-  reader.onload = function(e) {
 
-    photoData = e.target.result;
+    document
+    .getElementById("step3")
+    .classList
+    .remove("hidden");
 
-    const preview =
-      document.getElementById("photoPreview");
 
-    preview.src = photoData;
-
-    preview.style.display = "block";
-
-  };
-
-  reader.readAsDataURL(file);
-}
-
-function openCamera() {
-
-  const input =
-    document.getElementById("photoInput");
-
-  input.setAttribute("capture", "environment");
-
-  input.click();
-
-}
-
-/* ---------------- SHARE ---------------- */
-
-async function shareRakhi() {
-
-  const shareText =
-    "❤️ I created a special " +
+    document
+    .getElementById("loadingText")
+    .innerText =
+    "Creating " +
     selectedRakhiName +
-    " Rakhi for you, " +
+    " Rakhi for " +
     brother +
-    "! Create yours with Arogya. " +
-    "Arogya launches 14 September 2026.";
+    " ❤️";
 
-  const shareData = {
-    title: "Arogya Rakhi ❤️",
-    text: shareText,
-    url: window.location.href
-  };
 
-  if (navigator.share) {
+    window.scrollTo({
+        top:0,
+        behavior:"smooth"
+    });
 
-    try {
 
-      await navigator.share(shareData);
+    setTimeout(function(){
 
-    } catch (error) {
+        document
+        .getElementById("step3")
+        .classList
+        .add("hidden");
 
-      console.log("Share cancelled.");
+
+        document
+        .getElementById("step4")
+        .classList
+        .remove("hidden");
+
+
+        document
+        .getElementById("finalName")
+        .innerText =
+        brother + " ❤️";
+
+
+        document
+        .getElementById("bandEmoji")
+        .innerText =
+        selectedRakhi;
+
+
+        const finalPhoto =
+        document.getElementById("finalPhoto");
+
+
+        if(brotherPhoto){
+
+            finalPhoto.src =
+            brotherPhoto;
+
+            finalPhoto.style.display =
+            "block";
+
+        }
+        else{
+
+            finalPhoto.style.display =
+            "none";
+
+        }
+
+
+        createConfetti();
+
+
+        window.scrollTo({
+            top:0,
+            behavior:"smooth"
+        });
+
+    },1800);
+
+}
+
+
+/* =========================
+   CONFETTI
+========================= */
+
+function createConfetti(){
+
+    const symbols = [
+        "❤️",
+        "💚",
+        "✨",
+        "🌸",
+        "🎉",
+        "🎁"
+    ];
+
+
+    for(let i=0;i<30;i++){
+
+        const piece =
+        document.createElement("div");
+
+        piece.className =
+        "confetti";
+
+        piece.innerText =
+        symbols[
+            Math.floor(
+                Math.random()*symbols.length
+            )
+        ];
+
+
+        piece.style.left =
+        Math.random()*100 + "vw";
+
+
+        piece.style.fontSize =
+        (10 + Math.random()*10) + "px";
+
+
+        piece.style.animationDuration =
+        (2 + Math.random()*2) + "s";
+
+
+        document.body.appendChild(piece);
+
+
+        setTimeout(function(){
+
+            piece.remove();
+
+        },4000);
 
     }
 
-  } else {
+}
 
-    try {
 
-      await navigator.clipboard.writeText(
-        window.location.href
-      );
+/* =========================
+   SHARE
+========================= */
 
-      alert(
-        "Your Arogya Rakhi link has been copied! ❤️"
-      );
+function shareRakhi(){
 
-    } catch (error) {
+    const shareText =
+    "❤️ I created a special Rakhi for you, " +
+    brother +
+    "! Celebrate the bond of care with Arogya. " +
+    "Arogya App launches 14 September 2026.";
 
-      prompt(
-        "Copy your Arogya Rakhi link:",
-        window.location.href
-      );
+
+    if(navigator.share){
+
+        navigator.share({
+
+            title:
+            "A Special Rakhi from Arogya ❤️",
+
+            text:
+            shareText,
+
+            url:
+            window.location.href
+
+        }).catch(function(){});
+
+    }
+    else{
+
+        const whatsapp =
+        "https://wa.me/?text=" +
+        encodeURIComponent(
+            shareText +
+            "\n\n" +
+            window.location.href
+        );
+
+
+        window.open(
+            whatsapp,
+            "_blank"
+        );
 
     }
 
-  }
 }
 
-/* ---------------- RESTART ---------------- */
 
-function restart() {
+/* =========================
+   SAVE RAKHI
+========================= */
 
-  brother = "";
-  selectedRakhi = "❤️";
-  selectedRakhiName = "Modern Heart";
-  photoData = "";
+function saveRakhi(){
 
-  document.getElementById("brotherName").value = "";
-
-  document.getElementById("photoPreview").style.display = "none";
-
-  document.getElementById("finalPhoto").style.display = "none";
-
-  document.getElementById("step4").classList.add("hidden");
-
-  document.getElementById("step2").classList.add("hidden");
-
-  document.getElementById("step1").classList.remove("hidden");
-
-  window.scrollTo({
-    top: 0,
-    behavior: "smooth"
-  });
-}
-
-/* ---------------- FOLLOW ---------------- */
-
-function followArogya() {
-
-  alert(
-    "Arogya is launching on 14 September 2026. ❤️\n\n" +
-    "Follow Arogya and be part of the health transformation journey."
-  );
+    alert(
+        "Your personalized Rakhi is ready! ❤️\n\n" +
+        "On supported browsers, you can take a screenshot of the Rakhi card and share it with your brother."
+    );
 
 }
 
